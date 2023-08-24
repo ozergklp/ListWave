@@ -1,0 +1,190 @@
+*{
+    
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+}
+body, :root, html{
+    margin-top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+#list {
+    border-right: 2px solid lightgray;
+}
+
+
+
+#todo-list,
+#todo-form,
+#list,
+#list-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#list li, #todo-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 5rem;
+}
+
+#todo-list li p, #todo-list li input[type = "text"] {
+    flex: 1;
+    font-size: 2rem;
+    margin: 10px;
+    padding: 0;
+
+}
+#list-form{
+    flex-direction: row;
+}
+
+#list-form input{
+    font-size: 4rem;
+    
+}
+
+#todo-form input{
+    font-size: 1.5rem;
+}
+
+
+
+#all{
+    display: flex;
+    margin-top: 0;
+    flex-direction: row;
+    
+}
+
+#all-1{
+    width: 20%;
+    top: 0;
+    z-index: 999;
+    margin: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+
+#all-2{
+    margin: 5rem;
+    margin-left: 0.5rem;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#forms{
+    position: sticky;
+    margin-top: 8%;
+    background-color: white;
+    
+
+}
+
+
+
+
+#list-section{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0.5rem;
+
+}
+
+button:hover{
+    background-color: lightgrey;
+    border-radius: 1.5rem;
+}
+li button:hover{
+    background-color: rgb(189, 186, 186);
+    border-radius: 50%;
+
+}
+
+li:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+p{
+    font-size: 1.25rem;
+}
+input{
+    border: none;
+    background-color: transparent;
+}
+
+#list-input{
+    width: 75%;
+}
+
+input:focus{
+    outline: none;
+}
+
+form{
+    display: flex;
+
+}
+
+form input{
+    flex: 1;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    
+}
+
+#list-input{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+
+
+#list{
+    top: 15%;
+    max-height: 600px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#todo-list{
+    max-height: 600px;
+    overflow-y: scroll;
+    margin-bottom: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#todo-list::-webkit-scrollbar, #list::-webkit-scrollbar{
+    display: none;
+}
+
